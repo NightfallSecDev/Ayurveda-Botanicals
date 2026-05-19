@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Lab | Ayurveda Botanicals</title>
+    <meta name="description" content="Ayurveda Botanicals formulation inventory management.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="admin-page">
+
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-brand">Ayurveda<span>Command</span></div>
+        <nav class="admin-nav">
+            <a href="./dashboard.html" class="admin-nav-link">Dashboard Overview</a>
+            <a href="./products.html" class="admin-nav-link active">Inventory Lab</a>
+            <a href="./orders.html" class="admin-nav-link">Order Tracking</a>
+            <a href="../index.html" class="admin-nav-link" style="margin-top:auto; background:rgba(0,0,0,0.2);">← Storefront Home</a>
+        </nav>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="admin-main">
+        <div class="admin-header-bar">
+            <div>
+                <h1 class="admin-title">Inventory Lab</h1>
+                <p style="color:var(--text-muted); font-size:1.1rem;">Manage active botanical formulations and pricing</p>
+            </div>
+            <div>
+                <button class="btn-primary" onclick="alert('Add formulation modal simulation')">+ Add New Formulation</button>
+            </div>
+        </div>
+
+        <div class="admin-table-container">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Formulation Name</th>
+                        <th>Category</th>
+                        <th>Active Price</th>
+                        <th>Old Price</th>
+                        <th>Vedic Rating</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="admin-products-tbody">
+                    <!-- Dynamically populated by JS -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/admin.js"></script>
+</body>
+</html>

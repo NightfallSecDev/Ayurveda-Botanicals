@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Ayurveda Botanicals</title>
+    <meta name="description" content="Ayurveda Botanicals back-office command center.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="admin-page">
 
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-brand">Ayurveda<span>Command</span></div>
+        <nav class="admin-nav">
+            <a href="./dashboard.html" class="admin-nav-link active">Dashboard Overview</a>
+            <a href="./products.html" class="admin-nav-link">Inventory Lab</a>
+            <a href="./orders.html" class="admin-nav-link">Order Tracking</a>
+            <a href="../index.html" class="admin-nav-link" style="margin-top:auto; background:rgba(0,0,0,0.2);">← Storefront Home</a>
+        </nav>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="admin-main">
+        <div class="admin-header-bar">
+            <div>
+                <h1 class="admin-title">Command Overview</h1>
+                <p style="color:var(--text-muted); font-size:1.1rem;">Real-time alchemical performance and order metrics</p>
+            </div>
+            <div style="display:flex; align-items:center; gap:1rem; font-weight:600; color:var(--deep-green);">
+                <span>🛡️ Chief Alchemist Portal</span>
+            </div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Total Vedic Revenue</div>
+                <div class="metric-value metric-total-revenue">₹0</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Sacred Orders Processed</div>
+                <div class="metric-value metric-total-orders">0</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Active Formulations</div>
+                <div class="metric-value metric-total-products">0</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Sanctuary Status</div>
+                <div class="metric-value" style="color:#2E7D32; font-size:1.8rem;">Optimal Harmony</div>
+            </div>
+        </div>
+
+        <div style="margin-bottom:2rem; display:flex; align-items:center; justify-content:space-between;">
+            <h2 style="font-size:2rem; color:var(--deep-green);">Recent Alchemical Dispatches</h2>
+            <a href="./orders.html" class="btn-secondary" style="padding:0.6rem 1.5rem; font-size:1rem;">View All Orders</a>
+        </div>
+
+        <div class="admin-table-container">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Order Reference</th>
+                        <th>Customer</th>
+                        <th>Sacred Date</th>
+                        <th>Total Value</th>
+                        <th>Fulfillment Status</th>
+                    </tr>
+                </thead>
+                <tbody class="recent-orders-tbody">
+                    <!-- Dynamically populated by JS -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/admin.js"></script>
+</body>
+</html>
