@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout | Ayurveda Botanicals</title>
+    <meta name="description" content="Complete your Ayurvedic botanical wellness order securely.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <!-- Global Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="brand-logo">
+                Ayurveda<span>Botanicals</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="./shop.html" class="nav-link">Shop Catalog</a>
+                <a href="./about.html" class="nav-link">About Us</a>
+                <a href="./contactus.html" class="nav-link">Contact Concierge</a>
+            </nav>
+            <div class="header-actions">
+                <div class="auth-menu"></div>
+                <button class="action-btn cart-toggle-btn" aria-label="Open Basket">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-badge">0</span>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="shop-section" style="padding-top:4rem;">
+        <div class="section-header" style="margin-bottom:4rem;">
+            <span class="section-subtitle">Secure Portal</span>
+            <h1 class="section-title">Vedic Checkout</h1>
+        </div>
+
+        <div class="zigzag-container" style="display:grid; grid-template-columns: 1.5fr 1fr; gap:4rem; align-items:start;">
+            <div class="auth-box" style="max-width:100%; padding:3rem;">
+                <h3 style="font-size:1.8rem; margin-bottom:2rem; color:var(--deep-green);">Shipping &amp; Alchemical Delivery</h3>
+                <form class="checkout-form">
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+                        <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <input type="text" name="firstName" class="form-input" required placeholder="Ananya">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" name="lastName" class="form-input" required placeholder="Sharma">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address (For Vedic tracking)</label>
+                        <input type="email" name="email" class="form-input" required placeholder="ananya@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Street Address</label>
+                        <input type="text" name="address" class="form-input" required placeholder="7A, Lotus Villa, Green Park">
+                    </div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+                        <div class="form-group">
+                            <label class="form-label">City</label>
+                            <input type="text" name="city" class="form-input" required placeholder="New Delhi">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Postal Code</label>
+                            <input type="text" name="zip" class="form-input" required placeholder="110016">
+                        </div>
+                    </div>
+
+                    <h3 style="font-size:1.8rem; margin:2rem 0 1.5rem; color:var(--deep-green);">Payment Simulation</h3>
+                    <div style="padding:1.5rem; background:var(--paper-tan); border-radius:16px; border:1px solid var(--border-color); margin-bottom:2rem;">
+                        <p style="font-weight:600; color:var(--deep-green); margin-bottom:0.5rem;">🔒 Secure 256-bit Encrypted Gateway</p>
+                        <p style="font-size:0.95rem; color:var(--text-muted);">This is a premium client simulation. No actual credit card details are required. Click place order below to instantly process your Vedic ritual basket.</p>
+                    </div>
+
+                    <button type="submit" class="btn-auth-submit" style="font-size:1.2rem; padding:1.2rem;">Place Sacred Order</button>
+                </form>
+            </div>
+
+            <div class="auth-box" style="max-width:100%; padding:3rem; background:var(--alabaster);">
+                <h3 style="font-size:1.8rem; margin-bottom:2rem; color:var(--deep-green);">Order Summary</h3>
+                <div class="checkout-order-items" style="margin-bottom:2rem;"></div>
+                <div style="border-top:1px solid var(--glass-border); padding-top:1.5rem;">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:1rem; font-weight:600;">
+                        <span>Subtotal:</span>
+                        <span class="checkout-subtotal">₹0</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:1rem; font-weight:600;">
+                        <span>Vedic Express Shipping:</span>
+                        <span style="color:var(--mustard-yellow);">Complimentary</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-top:1.5rem; padding-top:1.5rem; border-top:2px solid var(--deep-green); font-size:1.6rem; font-weight:700; color:var(--deep-green);">
+                        <span>Total:</span>
+                        <span class="checkout-total">₹0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="section-header">
+                <span class="section-subtitle">Got Questions?</span>
+                <h2 class="section-title">Ayurvedic Wisdom FAQ</h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What makes Ayurveda Botanicals 100% clean and pure?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We formulate strictly according to ancient Ayurvedic texts, using pure cold-pressed botanical oils, sun-dried herbs, and floral extracts. Our products are completely free from parabens, sulfates, phthalates, mineral oils, and artificial fragrances.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How often should I use the Bhringraj &amp; Amla Hair Oil?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For optimal results, we recommend gently warming the oil and massaging it into your scalp 2-3 times a week. Leaving it on overnight allows the active botanical nutrients to deeply penetrate the hair follicles.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is the Soundarya Ubtan suitable for sensitive skin?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely. Our ubtan is crafted with soothing ingredients like pure sandalwood powder and fresh rose petals. If you have sensitive skin, we recommend mixing it with pure rose water or raw milk rather than plain water or yogurt.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How does the 30-day purity guarantee work?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We stand by the supreme quality of our Vedic alchemy. If you are not entirely satisfied with your botanical ritual, you can return the product within 30 days for a full refund or exchange through our concierge service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Cart Drawer -->
+    <div class="cart-overlay"></div>
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h3 class="cart-title">Your Ayurvedic Basket</h3>
+            <button class="btn-close-cart" aria-label="Close Basket">✕</button>
+        </div>
+        <div class="cart-body"></div>
+        <div class="cart-footer">
+            <div class="cart-summary-row">
+                <span>Subtotal:</span>
+                <span class="cart-total-price">₹0</span>
+            </div>
+            <a href="./checkout.html" class="btn-checkout">Proceed to Secure Checkout</a>
+        </div>
+    </div>
+
+    <!-- Global Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">
+                    Ayurveda<span>Botanicals</span>
+                </a>
+                <p class="footer-desc">Pioneering authentic Ayurvedic wellness through uncompromising botanical purity and ancient Vedic alchemy.</p>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Navigation</h4>
+                <div class="footer-links">
+                    <a href="../index.html" class="footer-link">Home</a>
+                    <a href="./shop.html" class="footer-link">Shop Catalog</a>
+                    <a href="./about.html" class="footer-link">About Us</a>
+                    <a href="./contactus.html" class="footer-link">Contact Concierge</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Legal Architecture</h4>
+                <div class="footer-links">
+                    <a href="../legal/privacy.html" class="footer-link">Privacy Policy</a>
+                    <a href="../legal/terms.html" class="footer-link">Terms of Service</a>
+                    <a href="../legal/refund.html" class="footer-link">Refund Policy</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Command Center</h4>
+                <div class="footer-links">
+                    <a href="../admin/dashboard.html" class="footer-link">Admin Dashboard</a>
+                    <a href="../admin/products.html" class="footer-link">Inventory Lab</a>
+                    <a href="../admin/orders.html" class="footer-link">Order Tracking</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Ayurveda Botanicals. All Rights Reserved.</span>
+            <span>Handcrafted with pure Vedic alchemical principles.</span>
+        </div>
+    </footer>
+
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
